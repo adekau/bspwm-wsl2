@@ -1,8 +1,8 @@
 # bspwm-wsl2
-Config files for running bspwm and sxhkd in Windows through WSL2.
+Config files for running **bspwm** and **sxhkd** in Windows through **WSL2** and **VcXSrv**.
 
 ## Installing
-see `config_files.txt` for a list of programs needed.
+See `config_files.txt` for a list of programs needed.
 
 Config files also need to be copied (or symlinked) to their correct locations. For example,
 ```bash
