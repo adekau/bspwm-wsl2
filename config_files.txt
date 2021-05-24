@@ -1,0 +1,15 @@
+~/.config/bspwm/bspwmrc
+~/.config/sxhkd/sxhkdrc
+~/.xsessionrc
+~/.bashrc
+~/.vimrc
+
+things to install:
+- bspwm/sxhkd
+- kitty
+- rofi
+- python3-pip
+- wal (from pip3, pip3 install wal)
+- vim
+- vim-plug
+
