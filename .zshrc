@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:/home/adekau/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 alias git="git.exe"
 
@@ -103,7 +103,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-export PATH="$PATH:$HOME/.local/bin"
 
 (cat ~/.cache/wal/sequences &)
 
