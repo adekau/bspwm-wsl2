@@ -43,16 +43,16 @@ snippet td "superscript" iA
 ^{$1}$0
 endsnippet
 
-snippet // "Fraction" iA
+snippet // "Fraction" i
 \\frac{$1}{$2}$0
 endsnippet
 
-snippet '((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/' "Fraction" wrA
+snippet '((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/' "Fraction" wr
 \\frac{`!p snip.rv = match.group(1)`}{$1}$0
 endsnippet
 
 priority 1000
-snippet '^.*\)/' "() fraction" wrA
+snippet '^.*\)/' "() fraction" wr
 `!p
 stripped = match.string[:-1]
 depth = 0
@@ -64,10 +64,6 @@ while True:
 	i -= 1
 snip.rv = stripped[0:i] + "\\frac{" + stripped[i+1:-1] + "}"
 `{$1}$0
-endsnippet
-
-snippet / "Fraction" iA
-\\frac{${VISUAL}}{$1}$0
 endsnippet
 
 snippet '(\w+)bar' "bar postfix" ri
@@ -82,4 +78,20 @@ snippet '(\w+)vec' "vector postfix" ri
 \vec{`!p
 snip.rv = match.group(1)
 `}
+endsnippet
+
+snippet preamble "Insert Preamble" b
+\documentclass[11pt]{article}
+
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+
+\newcommand{\incfig}[2][1]{%
+    \def\svgwidth{#1\columnwidth}
+    \import{./figures/}{#2.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
 endsnippet

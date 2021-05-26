@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$HOME/.local/bin:/opt/texlive:$PATH"
 
 alias git="git.exe"
 
