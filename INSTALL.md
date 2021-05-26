@@ -30,6 +30,7 @@
     - libxcb-util-dev
     - xcb
     - libxcb-cursor-dev
+    - To install these: `sudo apt install xcb libxcb-util-dev libxcb-cursor-dev`
 - inkscape-figures (github https://github.com/gillescastel/inkscape-figures)
     - configuration is already in .vimrc 
     - `pip3 install inkscape-figures`
